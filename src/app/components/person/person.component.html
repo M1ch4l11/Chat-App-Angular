@@ -1,0 +1,7 @@
+<div class="Form" >
+    <mat-form-field class="MatForm" floatLabel="always" appearance="outline" >
+      <mat-label>{{legend}}</mat-label>
+      <textarea matInput id="pay" class="txt" name="message" cols="30" rows="5" #txt></textarea>
+    </mat-form-field>
+    <button mat-raised-button (click)="posli(txt.value,legend)" class="Btn"><mat-icon>keyboard_arrow_right</mat-icon>SEND</button>
+  </div>

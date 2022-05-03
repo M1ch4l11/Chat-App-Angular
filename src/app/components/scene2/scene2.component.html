@@ -1,0 +1,16 @@
+<h1 class="Nad">Chat Window</h1>
+<div class="Div">
+  <mat-form-field class="container-fluid Form"  >
+    <mat-list *ngIf="messages" class="row">
+      <mat-list-item class="col-12" *ngFor="let item of messages" >
+        <mat-icon class="icon">turned_in</mat-icon>
+        <div class="divko">
+          <p class="user">{{item.id}}</p>
+          <p class="text">{{item.mess}}</p>
+        </div>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  </mat-form-field>
+  <button mat-flat-button class="BtnClear" (click)="clearWindow()" ><mat-icon>clear</mat-icon>CLEAR CHAT WINDOW</button>      
+</div>
